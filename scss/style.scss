@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  background-color: #333;
+}
+
+.sky {
+  position: relative;
+  height: 60vh;
+  background-color: royalblue;
+}
+
+.sun {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 0 0 70px yellow;
+}
+
+.ground {
+  position: relative;
+  height: 40vh;
+  background-color: #403535;
+}
+
+.grass {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-color: greenyellow;
+}
+
+.road {
+  position: absolute;
+  top: 20px;
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+}
+
+.car {
+  position: absolute;
+  top: -10px;
+  left: 200px;
+  width: 120px;
+  height: 50px;
+  background-color: tomato;
+  border-radius: 10px;
+}
+
+.car::before,
+.car::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: tomato;
+}
+
+.car::after {
+  right: -15px;
+  border-top-right-radius: 5px;
+}
+
+.car::before {
+  left: -10px;
+}
+
+.wheel {
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px dashed #999;
+}
+
+.front-wheel {
+  left: 85px;
+  z-index: 1;
+}
+
+.rear-wheel {
+  left: 10px;
+}
+
+.window {
+  position: absolute;
+  top: 5px;
+  width: 40px;
+  height: 20px;
+  background-color: blue;
+}
+
+.front-window {
+  right: 0;
+  border-top-right-radius: 5px;
+  z-index: 1;
+}
+.rear-window {
+  left: 0;
+  border-top-left-radius: 5px;
+}
