@@ -9,12 +9,15 @@ body {
   font-size: 36px;
   color: #fff;
   background-color: #333;
+  overflow: hidden;
 }
 
 .sky {
   position: relative;
   height: 60vh;
   background-color: royalblue;
+  -webkit-animation: sky 8s linear infinite;
+          animation: sky 8s linear infinite;
 }
 
 .sun {
@@ -26,6 +29,8 @@ body {
   border-radius: 50%;
   background-color: orange;
   box-shadow: 0 0 70px yellow;
+  -webkit-animation: sun 8s linear infinite;
+          animation: sun 8s linear infinite;
 }
 
 .ground {
@@ -58,6 +63,8 @@ body {
   height: 50px;
   background-color: tomato;
   border-radius: 10px;
+  -webkit-animation: car 8s linear infinite;
+          animation: car 8s linear infinite;
 }
 
 .car::before,
@@ -88,6 +95,8 @@ body {
   background-color: black;
   border-radius: 50%;
   border: 2px dashed #999;
+  -webkit-animation: wheel 2s linear infinite;
+          animation: wheel 2s linear infinite;
 }
 
 .front-wheel {
@@ -116,4 +125,94 @@ body {
 .rear-window {
   left: 0;
   border-top-left-radius: 5px;
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+@-webkit-keyframes sun {
+  0% {
+    top: 1000px;
+  }
+  40% {
+    top: 100px;
+  }
+  60% {
+    top: 100px;
+  }
+  100% {
+    top: 1000px;
+  }
+}
+@keyframes sun {
+  0% {
+    top: 1000px;
+  }
+  40% {
+    top: 100px;
+  }
+  60% {
+    top: 100px;
+  }
+  100% {
+    top: 1000px;
+  }
+}
+@-webkit-keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1500px;
+  }
+}
+@keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1500px;
+  }
+}
+@-webkit-keyframes wheel {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wheel {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
