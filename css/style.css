@@ -33,6 +33,65 @@ body {
           animation: sun 8s linear infinite;
 }
 
+.cloud.one {
+  top: 10%;
+  width: 80px;
+  height: 30px;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.cloud.two {
+  top: 20%;
+  width: 110px;
+  height: 40px;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.cloud.three {
+  top: 80%;
+  width: 70px;
+  height: 30px;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.cloud {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  width: 300px;
+  height: 100px;
+  border-radius: 1000px;
+  box-shadow: 0 0 50px rgb(87, 167, 218);
+  background-color: #fff;
+  -webkit-animation: zoomies 10s infinite linear;
+          animation: zoomies 10s infinite linear;
+}
+
+.cloud::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 10%;
+  width: 50%;
+  height: 150%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.cloud::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: 20%;
+  width: 40%;
+  height: 130%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 .ground {
   position: relative;
   height: 40vh;
@@ -214,5 +273,25 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes zoomies {
+  from {
+    left: 0%;
+    transform: translateX(-100%);
+  }
+  to {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+@keyframes zoomies {
+  from {
+    left: 0%;
+    transform: translateX(-100%);
+  }
+  to {
+    left: 100%;
+    transform: translateX(0%);
   }
 }/*# sourceMappingURL=style.css.map */
