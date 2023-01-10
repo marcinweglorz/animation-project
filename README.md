@@ -1,9 +1,9 @@
-# animation-project
+# CSS Animation Project vol 1
 
-Zabawa przy tworzeniu animacji w html / css-sass.
-Z biegem czasu będę tu dodawać nowe elementy jednocześnie ucząc się i szlifując kod.
+Fun with creating animations in html / css-sass.
+Over time, I will add new elements here while learning and polishing the code.
 
 
-------------------------------------------------------------------------------------------------
+-------------------------------------------------- ----------------------------------------------
 
-Dodane chmury z animacją latania na osi X.
+Added clouds with flying animation on X axis.

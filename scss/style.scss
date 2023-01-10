@@ -1,238 +1,239 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  color: #fff;
-  background-color: #333;
-  overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	color: #fff;
+	background-color: #333;
+	overflow: hidden;
 }
 
 .sky {
-  position: relative;
-  height: 60vh;
-  background-color: royalblue;
-  animation: sky 8s linear infinite;
+	position: relative;
+	height: 60vh;
+	background-color: royalblue;
+	animation: sky 8s linear infinite;
 }
 
 .sun {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: orange;
-  box-shadow: 0 0 70px yellow;
-  animation: sun 8s linear infinite;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: orange;
+	box-shadow: 0 0 70px yellow;
+	animation: sun 8s linear infinite;
 }
 
 .cloud.one {
-  top: 10%;
-  width: 80px;
-  height: 30px;
-  animation-duration: 6s;
+	top: 10%;
+	width: 80px;
+	height: 30px;
+	animation-duration: 6s;
 }
 .cloud.two {
-  top: 20%;
-  width: 110px;
-  height: 40px;
-  animation-duration: 8s;
+	top: 20%;
+	width: 110px;
+	height: 40px;
+	animation-duration: 8s;
 }
 
 .cloud.three {
-  top: 80%;
-  width: 70px;
-  height: 30px;
-  animation-duration: 7s;
+	top: 80%;
+	width: 70px;
+	height: 30px;
+	animation-duration: 7s;
 }
 
 .cloud {
-  position: absolute;
-  top: 200px;
-  left: 350px;
-  width: 300px;
-  height: 100px;
-  border-radius: 1000px;
-  box-shadow: 0 0 50px rgb(87, 167, 218);
-  background-color: #fff;
-  animation: zoomies 10s infinite linear;
+	position: absolute;
+	top: 200px;
+	left: 350px;
+	width: 300px;
+	height: 100px;
+	border-radius: 1000px;
+	box-shadow: 0 0 50px rgb(87, 167, 218);
+	background-color: #fff;
+	animation: zoomies 10s infinite linear;
 }
 
 .cloud::before {
-  content: "";
-  position: absolute;
-  top: -60%;
-  left: 10%;
-  width: 50%;
-  height: 150%;
-  background-color: #fff;
-  border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: -60%;
+	left: 10%;
+	width: 50%;
+	height: 150%;
+	background-color: #fff;
+	border-radius: 50%;
 }
 .cloud::after {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: 20%;
-  width: 40%;
-  height: 130%;
-  background-color: #fff;
-  border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: -40%;
+	right: 20%;
+	width: 40%;
+	height: 130%;
+	background-color: #fff;
+	border-radius: 50%;
 }
 
 .ground {
-  position: relative;
-  height: 40vh;
-  background-color: #403535;
+	position: relative;
+	height: 40vh;
+	background-color: #403535;
 }
 
 .grass {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 150px;
-  background-color: greenyellow;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 150px;
+	background-color: greenyellow;
 }
 
+
 .road {
-  position: absolute;
-  top: 20px;
-  height: 100px;
-  width: 100%;
-  background-color: grey;
+	position: absolute;
+	top: 20px;
+	height: 100px;
+	width: 100%;
+	background-color: grey;
 }
 
 .car {
-  position: absolute;
-  top: -10px;
-  left: 200px;
-  width: 120px;
-  height: 50px;
-  background-color: tomato;
-  border-radius: 10px;
-  animation: car 8s linear infinite;
+	position: absolute;
+	top: -10px;
+	left: 200px;
+	width: 120px;
+	height: 50px;
+	background-color: tomato;
+	border-radius: 10px;
+	animation: car 8s linear infinite;
 }
 
 .car::before,
 .car::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 25px;
-  height: 25px;
-  background-color: tomato;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 25px;
+	height: 25px;
+	background-color: tomato;
 }
 
 .car::after {
-  right: -15px;
-  border-top-right-radius: 5px;
+	right: -15px;
+	border-top-right-radius: 5px;
 }
 
 .car::before {
-  left: -10px;
+	left: -10px;
 }
 
 .wheel {
-  position: absolute;
-  bottom: -10px;
-  left: 5px;
-  height: 30px;
-  width: 30px;
-  background-color: black;
-  border-radius: 50%;
-  border: 2px dashed #999;
-  animation: wheel 2s linear infinite;
+	position: absolute;
+	bottom: -10px;
+	left: 5px;
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+	border: 2px dashed #999;
+	animation: wheel 2s linear infinite;
 }
 
 .front-wheel {
-  left: 85px;
-  z-index: 1;
+	left: 85px;
+	z-index: 1;
 }
 
 .rear-wheel {
-  left: 10px;
+	left: 10px;
 }
 
 .window {
-  position: absolute;
-  top: 5px;
-  width: 40px;
-  height: 20px;
-  background-color: blue;
+	position: absolute;
+	top: 5px;
+	width: 40px;
+	height: 20px;
+	background-color: blue;
 }
 
 .front-window {
-  right: 0;
-  border-top-right-radius: 5px;
-  z-index: 1;
+	right: 0;
+	border-top-right-radius: 5px;
+	z-index: 1;
 }
 .rear-window {
-  left: 0;
-  border-top-left-radius: 5px;
+	left: 0;
+	border-top-left-radius: 5px;
 }
 
 @keyframes sky {
-  0% {
-    background-color: black;
-  }
-  40% {
-    background-color: royalblue;
-  }
-  60% {
-    background-color: royalblue;
-  }
-  100% {
-    background-color: black;
-  }
+	0% {
+		background-color: black;
+	}
+	40% {
+		background-color: royalblue;
+	}
+	60% {
+		background-color: royalblue;
+	}
+	100% {
+		background-color: black;
+	}
 }
 
 @keyframes sun {
-  0% {
-    top: 1000px;
-  }
-  40% {
-    top: 100px;
-  }
-  60% {
-    top: 100px;
-  }
-  100% {
-    top: 1000px;
-  }
+	0% {
+		top: 1000px;
+	}
+	40% {
+		top: 100px;
+	}
+	60% {
+		top: 100px;
+	}
+	100% {
+		top: 1000px;
+	}
 }
 
 @keyframes car {
-  from {
-    left: -500px;
-  }
+	from {
+		left: -500px;
+	}
 
-  to {
-    left: 1500px;
-  }
+	to {
+		left: 1500px;
+	}
 }
 
 @keyframes wheel {
-  from {
-    transform: rotate(0);
-  }
+	from {
+		transform: rotate(0);
+	}
 
-  to {
-    transform: rotate(360deg);
-  }
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes zoomies {
-  from {
-    left: 0%;
-    transform: translateX(-100%);
-  }
+	from {
+		left: 0%;
+		transform: translateX(-100%);
+	}
 
-  to {
-    left: 100%;
-    transform: translateX(0%);
-  }
+	to {
+		left: 100%;
+		transform: translateX(0%);
+	}
 }
