@@ -114,4 +114,13 @@ button::after {
 
 .slice:hover::after {
   right: 0;
+}
+
+.hmm {
+  border: none;
+  transition: 0.5s;
+}
+
+.hmm:hover {
+  box-shadow: 2px 3px 0 0 rgba(255, 255, 255, 0.8), inset 11px 6px 10px rgb(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
