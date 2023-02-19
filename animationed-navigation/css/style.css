@@ -28,7 +28,7 @@ ul {
 	width: 300px;
 	cursor: pointer;
 	line-height: 100px;
-	transition: bacground-color 0.3s;
+	transition: background-color 0.3s;
 }
 
 .menu-item:hover {
